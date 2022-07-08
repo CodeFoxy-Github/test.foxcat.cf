@@ -3,13 +3,13 @@
 <body>
 <button onclick="myFunction()">registerProtocolHandler</button>
 
-<a href="web+codefoxy:some+data">Open in "My App"</a>
+<a href="codefoxy:some+data">Open in "My App"</a>
 
 
 <script>
 function myFunction() {
 navigator.registerProtocolHandler(
-    'web+codefoxy', 'https://www.google.com/search?q=%s', 'Google');
+    'codefoxy', 'https://www.google.com/search?q=%s', 'Google');
 }
 
 </script>
