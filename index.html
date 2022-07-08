@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <body>
-<button onclick="myFunction()">Click me</button>
+<button onclick="myFunction()">registerProtocolHandler</button>
+
+<a href="web+codefoxy:some+data">Open in "My App"</a>
 
 
 <script>
 function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
+navigator.registerProtocolHandler(
+    'web+codefoxy', 'https://www.google.com/search?q=%s', 'Google');
 }
+
 </script>
 </body>
 </html>
